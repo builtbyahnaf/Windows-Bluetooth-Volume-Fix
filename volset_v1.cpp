@@ -20,12 +20,17 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 if (msg == WM_COMMAND) {
     switch (LOWORD(wParam)) {
 
+        /* Note: Navigate and paste the path of where you kept SoundVolumeView.exe exactly where I've wrote (Enter path). The code won't work otherwise.
+        It should look like this example:
+        E:\\Downloaded Softwares\\soundvolumeview-x64\\SoundVolumeView.exe\
+        */
+
         case 1:
-        system("cmd /c \"E:\\Softwares for my laptop\\Utilities\\soundvolumeview-x64\\SoundVolumeView.exe\" /ChangeVolume \"AirPods Pro2\\Device\\Earpods\\Render\" 10");
+        system("cmd /c \"(EnterPath)" /ChangeVolume \"AirPods Pro2\\Device\\Earpods\\Render\" 10");
         break;
 
     case 2:
-        system("cmd /c \"E:\\Softwares for my laptop\\Utilities\\soundvolumeview-x64\\SoundVolumeView.exe\" /ChangeVolume \"AirPods Pro2\\Device\\Earpods\\Render\" -10");
+        system("cmd /c \"(EnterPath)" /ChangeVolume \"AirPods Pro2\\Device\\Earpods\\Render\" -10");
         break;
 
     case 3:
@@ -125,7 +130,12 @@ while (true) {
     std::string currentDevice = GetDefaultAudioDeviceId();
 
     if (!currentDevice.empty() && currentDevice != lastDevice) {
-        system("cmd /c \"E:\\Softwares for my laptop\\Utilities\\soundvolumeview-x64\\setvolume.bat\"");
+        /*
+        Note: Navigate and paste the path of where you kept setvolume.bat exactly where I've wrote (Enter bat path). The code won't work otherwise.
+        It should look like this example:
+        E:\\Downloaded Softwares\\soundvolumeview-x64\\setvolume.bat\
+        */
+        system("cmd /c \"(Enter bat path)"");
         lastDevice = currentDevice;
     }
 
