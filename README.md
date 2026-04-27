@@ -18,7 +18,7 @@ Android figured this out years ago. Windows should have a simple, built-in setti
 
 
 
-I did some browsing and figured out there is no direct Windows API call to modify volume programmatically but there's a third party app named AutoHotkey that offers it for free. I made a simple one file program right here with C++ using that advantage to lower volume automatically.
+I did some browsing and figured out there is no direct Windows API call to modify volume programmatically but there's a third party app named SoundVolumeView by NirSoft that offers it for free. I made a simple one file program right here with C++ using that advantage to lower volume automatically.
 
 
 
@@ -44,7 +44,8 @@ I did some browsing and figured out there is no direct Windows API call to modif
 
 
 
-**AutoHotkey Dependency:** Ensure you have AutoHotkey installed, as the C++ logic relies on it to bypass Windows' lack of a direct volume API.
+**SoundVolumeView Dependency:** Ensure you have SoundVolumeView installed, as the C++ logic relies on it to bypass Windows' lack of a direct volume API. You can download it from here:
+https://www.nirsoft.net/utils/sound_volume_view.html
 
 
 
