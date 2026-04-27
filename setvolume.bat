@@ -4,4 +4,4 @@
 :: It should look like this example:
 :: E:\Downloaded Softwares\soundvolumeview-x64\SoundVolumeView.exe
 
-"(Enter path)" /SetVolume "AirPods Pro2\Device\Earpods\Render" 24
+"(Enter path)" /SetVolume "AirPods Pro2\Device\Earpods\Render" 20
