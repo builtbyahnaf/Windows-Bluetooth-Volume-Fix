@@ -1,3 +1,13 @@
+/*
+
+To manually compile this file, first ensure you have C++ SDK/frameworks installed properly. Check gdb --version, g++ --version and gcc --version to verify.
+
+Then use this command to compile:
+g++ -std=c++20 volset_v1.cpp -o audio_watcher_v1.03.exe -lole32 -lshell32 -luser32 -mwindows
+
+*/
+
+
 #define UNICODE
 #define _UNICODE
 
